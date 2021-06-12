@@ -8,4 +8,5 @@ app_name = 'proshop'
 
 urlpatterns = [
     path('', HomeView.as_view()),
+    
 ]
