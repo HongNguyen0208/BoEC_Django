@@ -19,5 +19,12 @@ body,
     height: 100%; } }
 
 /* Footer color for sake of consistency with Navbar */
+
 .page-footer {
-  background-color: #929FBA; }
+  background-color: #929FBA;
+  bottom: 0px;
+  position: fixed;
+  width:100%;
+}
+
+
