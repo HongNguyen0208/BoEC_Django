@@ -85,6 +85,11 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+
+            # 'libraries':{
+            #             'cart_template_tags':  'proshop.templatetags.cart_template_tags',
+ 
+            # }
         },
     },
 ]
