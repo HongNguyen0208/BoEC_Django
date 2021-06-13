@@ -21,3 +21,4 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('', include('proshop.urls', namespace='proshop')),
 ]
+

@@ -6,8 +6,12 @@ from .models import Item
 
 class HomeView(ListView):
     model = Item
-    paginate_by = 10
+    paginate_by = 8
     template_name = 'socialaccount/home.html'
 
+
+class ItemDetailView(DetailView):
+    model = Item
+    template_name = "product.html"
 
 
