@@ -23,8 +23,14 @@ body,
 .page-footer {
   background-color: #929FBA;
   bottom: 0px;
-  position: sticky;
+  position: fixed;
   width:100%;
+}
+
+.pagination.pg-blue {
+  margin-bottom: 4rem !important;
+  margin-top: -10px !important;
+  z-index: 0;
 }
 
 
