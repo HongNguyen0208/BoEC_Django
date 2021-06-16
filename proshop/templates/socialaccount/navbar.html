@@ -34,7 +34,7 @@
         <ul class="navbar-nav nav-flex-icons">
           {% if request.user.is_authenticated %}
           <li class="nav-item">
-            <a href="{% url 'proshop:order-summary' %}" class="nav-link waves-effect">
+            <a href="{% url 'proshop:cart' %}" class="nav-link waves-effect">
               <span class="badge red z-depth-1 mr-1"> {{ user.username }} </span>
               <i class="fas fa-shopping-cart"></i>
               <span class="clearfix d-none d-sm-inline-block"> Cart </span>
