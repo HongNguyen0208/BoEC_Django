@@ -1,4 +1,4 @@
-{% load cart_template_tags %}
+<!-- {% load cart_template_tags %} -->
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
     <div class="container">
@@ -35,18 +35,20 @@
           {% if request.user.is_authenticated %}
           <li class="nav-item">
             <a href="{% url 'proshop:cart' %}" class="nav-link waves-effect">
-              <span class="badge red z-depth-1 mr-1"> {{ user.username }} </span>
+              <!-- <span class="badge red z-depth-1 mr-1"> {{ user}} </span> -->
               <i class="fas fa-shopping-cart"></i>
               <span class="clearfix d-none d-sm-inline-block"> Cart </span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link waves-effect" href="#">
+              <i class="fas fa-user"></i>
               <span class="clearfix d-none d-sm-inline-block"> Hi, {{user.username}} ! </span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link waves-effect" href="{% url 'account_logout' %}">
+              <i class="fas fa-sign-out-alt"></i>
               <span class="clearfix d-none d-sm-inline-block"> Logout </span>
             </a>
           </li>

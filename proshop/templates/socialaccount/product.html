@@ -11,7 +11,7 @@
         <!--Grid column-->
         <div class="col-md-6 mb-3 text-center">
 
-          <img src="{{MEDIA_URL}}{{ object.image }}" class="img-fluid" alt="">
+          <img style="width: 300px;" src="{{MEDIA_URL}}{{ object.image }}" class="img-fluid" alt="">
           
         </div>
         <!--Grid column-->
@@ -56,7 +56,7 @@
 
             </form> 
             {% endcomment %}
-            <a href="{{ object.get_add_to_cart_url }}" class="btn btn-primary btn-md my-0 p">
+            <a style="margin-bottom: 4rem !important;" href="{{ object.get_add_to_cart_url }}" class="btn btn-primary btn-md my-0 p">
               Add to cart
               <i class="fas fa-shopping-cart ml-1"></i>
             </a>
