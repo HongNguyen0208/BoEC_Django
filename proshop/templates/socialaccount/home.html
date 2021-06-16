@@ -71,15 +71,18 @@
                 <a href="" class="grey-text">
                   <h5>{{ item.get_category_display }}</h5>
                 </a>
-                <h5>
+                <h5 style="
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden; ">
                   <strong>
-                    <a href="{{ item.get_absolute_url }}" class="dark-grey-text">{{ item.title }}
+                    <a style="font-size: 1.1rem;" href="{{ item.get_absolute_url }}" class="dark-grey-text">{{ item.title }}
                     </a>
                   </strong>
                 </h5>
 
                 <h4 class="font-weight-bold blue-text">
-                  <strong>$
+                  <strong style="font-size: 1.3rem;">$
                   {% if item.discount_price %}
                   {{ item.discount_price }}
                   {% else %}
